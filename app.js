@@ -21,7 +21,7 @@ const isComplexCalculating = () => {
 const powerBtn = document.querySelector("#power");
 const turnOn = () => {
 	state.isOn = true;
-	powerBtn.style.backgroundColor = "#45e41e";
+powerBtn.style.backgroundColor = "rgb(0, 255, 64)";
 };
 
 const turnOnCalculator = (function() {

@@ -1,51 +1,47 @@
 <!doctype html>
 <html>
 <head><title>Calculator</title>
-<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="reset.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
+<h1> Calculator </h1>
+<h2> by JP </h2>
 <main class="main">
 
 <div class="calculator-container">
-    
 <span id="calculatingBox"></span>
 <span id="displayBox"></span>
 
 <div class ="section-container">
-<div class="numbers-container">
-	<div class="numbers-row">
-    <button id="power"> Power </button>
-    <button id ="clear"> Clear </button>
-    <button class="numbers" value = 0> 0 </button>    
-	</div>
-	<div class="numbers-row">
-    <button class="numbers" value = 7> 7 </button>
-    <button class="numbers" value = 8> 8 </button>
-    <button class="numbers" value = 9> 9 </button>
-	</div>
-	<div class="numbers-row">
-    <button class="numbers" value = 4> 4 </button>
-    <button class="numbers" value = 5> 5 </button>
-    <button class="numbers" value = 6> 6 </button>
-	</div>
-	<div class="numbers-row">
-    <button class="numbers" value = 1> 1 </button>
-    <button class="numbers" value = 2> 2 </button>
-    <button class="numbers" value = 3> 3 </button>
-	</div>
+
+<button id="power"> On </button>
+<button id="backspace"> < </button>
+<button id ="clear"> C </button>
+<button class="operators operations" id ="+" value="plus"> + </button>
+
+<button class="numbers" value = 7> 7 </button>
+<button class="numbers" value = 8> 8 </button>
+<button class="numbers" value = 9> 9 </button>
+<button class="operators operations" id ="-" value="minus"> - </button>
+
+<button class="numbers" value = 4> 4 </button>
+<button class="numbers" value = 5> 5 </button>
+<button class="numbers" value = 6> 6 </button>
+<button class="operators operations" id ="*" value="multiply"> * </button>
+
+<button class="numbers" value = 1> 1 </button>
+<button class="numbers" value = 2> 2 </button>
+<button class="numbers" value = 3> 3 </button>
+<button class="operators operations" id ="/" value="divide"> / </button>
+
+<button class="numbers" value = 0> 0 </button>    
+<button class="decimal" value = "."> . </button>
+<button class="operators equals" id ="=" value="equals"> = </button>
 </div>
 
-<div class="buttons-container">
-	<div class="operator-container">
-    <button class="operators" id ="+" value="plus"> + </button>
-    <button class="operators" id ="-" value="minus"> - </button>
-    <button class="operators" id ="*" value="multiply"> * </button>
-    <button class="operators" id ="/" value="divide"> / </button>
-    <button class="operators" id ="=" value="equals"> = </button>
-	</div>
-    </div>
-</div>
 </div>
 </main>
 
