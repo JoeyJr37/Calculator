@@ -1,0 +1,38 @@
+// clearScreen
+displayValue = 0;
+numbesrArray = [];
+displayBox.textContent = "";
+
+// setResult
+displayBox.textContent = result;
+displayValue = result;
+firstValue = result;
+priorityOperator = "";
+secondValue = 0;
+numbersArray = [];
+
+// evaluate
+let calcObject = new MathObject(operator, firstValue, secondValue);
+let finalResult = operate(calcObject);
+
+let complexCalcObject = new MathObject(priorityOperator, secondValue, thirdValue);
+let levelOneResult = operate(complexCalcObject);
+secondValue = levelOneResult;
+
+thirdValue = 0;
+
+//reset
+displayValue = 0;
+numbersArray = [];
+displayBox.textContent = "";
+state.isCalculating = false;
+state.isComplexCalculating = false;
+firstValue = 0;
+secondValue = 0;
+thirdValue = 0;
+calculatingBox.textContent = "";
+
+// turn off
+reset();
+state.isWaiting = false;
+

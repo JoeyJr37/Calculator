@@ -1,5 +1,60 @@
-#displayContainer {
-    border: 2px solid black;
-    padding: 10px;
-    height: 25px;
+* {
+font-size: 45px;
+}
+
+#displayBox {
+    border: 2px solid yellow;
+	height: 50px;
+}
+
+#calculatingBox {
+	font-size: 20px;
+	height: 25px;
+}
+
+#power {
+background-color: red;
+}
+
+.numbers-container {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+border: 2px solid red;}
+
+.buttons-container {
+display: flex;
+border: 2px solid blue;}
+
+.main {
+border: 2px solid purple;
+display: flex;
+margin: 50px;
+justify-content: center;
+}
+
+.calculator-container {
+display:flex;
+flex-direction: column;
+border: 2px solid green;
+}
+
+.section-container {
+display: flex;
+border: 3px solid green;
+}
+
+.numbers-row {
+border: 2px solid blue;
+display: flex;
+}
+
+.numbers {
+font-size: 55px;
+width: 100%;
+}
+
+.operator-container {
+display: flex;
+flex-direction: column;
 }

@@ -2,29 +2,53 @@
 <html>
 <head><title>Calculator</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 <body>
-    <span id="displayContainer">
-    <span id="displayBox"></span>
-    </span>
-    <button class="numbers" value = 0> 0 </button>
-    <button class="numbers" value = 1> 1 </button>
-    <button class="numbers" value = 2> 2 </button>
-    <button class="numbers" value = 3> 3 </button>
-    <button class="numbers" value = 4> 4 </button>
-    <button class="numbers" value = 5> 5 </button>
-    <button class="numbers" value = 6> 6 </button>
+<main class="main">
+
+<div class="calculator-container">
+    
+<span id="calculatingBox"></span>
+<span id="displayBox"></span>
+
+<div class ="section-container">
+<div class="numbers-container">
+	<div class="numbers-row">
+    <button id="power"> Power </button>
+    <button id ="clear"> Clear </button>
+    <button class="numbers" value = 0> 0 </button>    
+	</div>
+	<div class="numbers-row">
     <button class="numbers" value = 7> 7 </button>
     <button class="numbers" value = 8> 8 </button>
     <button class="numbers" value = 9> 9 </button>
-    <button class="operators" id ="plus" value="plus"> + </button>
-    <button class="operators" id ="minus" value="minus"> - </button>
-    <button class="operators" id ="multiply" value="multiply"> * </button>
-    <button class="operators" id ="divide" value="divide"> / </button>
-    <button id ="equals" value="equals"> = </button>
-    <button id ="clear"> Clear </button>
+	</div>
+	<div class="numbers-row">
+    <button class="numbers" value = 4> 4 </button>
+    <button class="numbers" value = 5> 5 </button>
+    <button class="numbers" value = 6> 6 </button>
+	</div>
+	<div class="numbers-row">
+    <button class="numbers" value = 1> 1 </button>
+    <button class="numbers" value = 2> 2 </button>
+    <button class="numbers" value = 3> 3 </button>
+	</div>
+</div>
 
+<div class="buttons-container">
+	<div class="operator-container">
+    <button class="operators" id ="+" value="plus"> + </button>
+    <button class="operators" id ="-" value="minus"> - </button>
+    <button class="operators" id ="*" value="multiply"> * </button>
+    <button class="operators" id ="/" value="divide"> / </button>
+    <button class="operators" id ="=" value="equals"> = </button>
+	</div>
+    </div>
+</div>
+</div>
+</main>
 
-<script src="logic.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
