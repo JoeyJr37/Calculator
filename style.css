@@ -53,7 +53,7 @@ color: rgb(0, 255, 255);
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: red;
+	background-color: orange;
 }
 
 button {
@@ -67,7 +67,7 @@ background-color: rgba(255, 68, 68, 1.0);
 
 @media all and (min-width: 0px) and (max-width: 320px) {
 	* {
-	font-size: 25px;
+	font-size: 19px;
 	}
 	#displayBox {
 	font-size: 55px;
@@ -75,7 +75,7 @@ background-color: rgba(255, 68, 68, 1.0);
 	#calculatingBox {
 		font-size: 20px;
 		height: 32px;
-		background-color: green;
+		background-color: blue;
 	}
 	
 }
@@ -90,7 +90,7 @@ font-size: 65px;
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: blue;
+	background-color: green;
 }
 
 }
@@ -113,14 +113,14 @@ font-size: 60px;
 @media all and (min-width: 1280px) {
 
 * {
-font-size: 87px;
+font-size: 80px;
 }
 
 #calculatingBox {
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: yellow;
+	background-color: red;
 }
 
 }
