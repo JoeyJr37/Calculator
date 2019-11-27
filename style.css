@@ -66,12 +66,12 @@ background-color: rgba(255, 68, 68, 1.0);
 
 @media all and (min-width: 0px) and (max-width: 320px) {
 	* {
-	font-size: 25px;
+	font-size: 15px;
 	}
 	#calculatingBox {
-		font-size: 7px;
+		font-size: 10px;
 		height: 32px;
-		background-color: blue;
+		background-color: yellow;
 	}
 	
 }
@@ -116,7 +116,7 @@ font-size: 87px;
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: yellow;
+	background-color: blue;
 }
 
 }
