@@ -223,4 +223,4 @@ powerBtn.addEventListener("click", () => {
 	if (state.isWaiting === true) {
 		state.isOn = false;
 		powerBtn.style.backgroundColor = "red";
-	}};
+	}});
