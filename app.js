@@ -42,9 +42,13 @@ const clearBtn = document.querySelector("#clear");
 const operatorBtns = document.querySelectorAll(".operators");
 const calculatingBox = document.querySelector("#calculatingBox");
 
+
+const arrayBox = document.querySelector("#arrayBox");
+
 const addNumbersToArray = (number) => {
-    numbersArray.push(number);
-    return numbersArray;};
+	numbersArray.push(number);
+	arrayBox.textContent = numbersArray;
+	return numbersArray;};
 
 document.querySelectorAll(".numbers").forEach((item) => {
         item.addEventListener("click", (event) => {
@@ -54,6 +58,16 @@ document.querySelectorAll(".numbers").forEach((item) => {
                 state.isWaiting = true;} 
                 });
             });
+
+const decimalBtn = document.querySelector(".decimal");
+let decimalPressed = false;
+decimalBtn.addEventListener("click", () => {
+	if (decimalPressed === false) {
+		displayValue = Number(addNumbersToArray(decimalBtn.value).join(""));
+		displayBox.textContent = displayValue;
+		decimalPressed = true;
+		} else {return null;}
+});
 
 const add = (x, y) => x + y;
 const subtract = (x, y) => x - y;
@@ -82,6 +96,7 @@ const MathObject = function (operation, firstNumber, secondNumber) {
 
 operatorBtns.forEach((item) => {
     item.addEventListener("click", (event) => {
+	decimalPressed = false;
         if (state.isWaiting === true && state.isCalculating === false && state.isComplexCalculating === false) {
             // we have one number and we need one operator to set to the value "operator"
             operator = event.target.id;
@@ -103,7 +118,7 @@ operatorBtns.forEach((item) => {
             // if equal is pressed then we evaluate the first two numbers with the operator, 
             if (priorityOperator === "=") {
                     let calcObject = new MathObject(operator, firstValue, secondValue);
-                    let result = operate(calcObject);
+                    let result = (operate(calcObject)).toFixed(2);
                 // display the result and then set that number equal to the firstValue and change isCalculating to false
                     displayBox.textContent = result;
                     displayValue = result;
@@ -195,4 +210,13 @@ clearBtn.addEventListener("click", () => {
     state.isCalculating = false;
     calculatingBox.textContent = "";
     state.isComplexCalculating = false;
+	decimalPressed = false;
+arrayBox.textContent = "";
 })
+
+const backspaceBTN = document.querySelector("#backspace");
+backspaceBTN.addEventListener("click", () => {
+	numbersArray.pop();
+	displayValue = Number(addNumbersToArray(event.target.value).join(""));
+	displayBox.textContent = displayValue;
+});
