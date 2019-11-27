@@ -14,6 +14,7 @@ display: flex;
 margin: 20px;
 justify-content: center;
 align-items: stretch;
+
 }
 
 .calculator-container {
@@ -21,7 +22,7 @@ display:flex;
 flex-direction: column;
 box-shadow: 1px 1px 8px 2px;
 background: white;
-width: 100%;
+
 }
 
 .section-container {
@@ -63,63 +64,3 @@ border-radius: 15px;
 #power {
 background-color: rgba(255, 68, 68, 1.0);
 }
-
-@media all and (min-width: 0px) and (max-width: 320px) {
-	* {
-	font-size: 19px;
-	}
-	#displayBox {
-	font-size: 55px;
-	}
-	#calculatingBox {
-		font-size: 20px;
-		height: 32px;
-	}
-	
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) { 
-
-* {
-font-size: 65px;
-}
-
-#calculatingBox {
-	font-size: 25px;
-	height: 42px;
-	padding: 10px;
-}
-
-}
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-
-* {
-font-size: 60px;
-}
-
-#calculatingBox {
-	font-size: 25px;
-	height: 42px;
-	padding: 10px;
-}
-
-}
-
-@media all and (min-width: 1280px) {
-
-* {
-font-size: 75px;
-}
-
-#calculatingBox {
-	font-size: 25px;
-	height: 42px;
-	padding: 10px;
-}
-
-}
- 
-
- 
-
