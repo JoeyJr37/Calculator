@@ -130,7 +130,7 @@ operatorBtns.forEach((item) => {
             } else if (priorityOperator === "+" || priorityOperator === "-") {
             // if + or - is pressed then we evaluate the first two numbers with the operator, 
                     let calcObject = new MathObject(operator, firstValue, secondValue);
-                    let result = operate(calcObject);
+                    let result = Number((operate(calcObject)).toFixed(2))
                     displayBox.textContent = result;
                     displayValue = result;
                     firstValue = result;
@@ -160,7 +160,7 @@ operatorBtns.forEach((item) => {
                 let calcObject = new MathObject(priorityOperator, secondValue, thirdValue);
                 let firstStepResult = operate(calcObject);
                 let finalCalcObject = new MathObject(operator, firstValue, firstStepResult);
-                let result = operate(finalCalcObject);
+                let result = Number((operate(finalCalcObject)).toFixed(2));
                 displayBox.textContent = result;
                 displayValue = result;
                 secondValue = 0;
@@ -174,7 +174,7 @@ operatorBtns.forEach((item) => {
                 let calcObject = new MathObject(priorityOperator, secondValue, thirdValue);
                 let firstStepResult = operate(calcObject);
                 let finalCalcObject = new MathObject(operator, firstValue, firstStepResult);
-                let result = operate(finalCalcObject);
+                let result = Number((operate(finalCalcObject)).toFixed(2));
                 displayBox.textContent = result;
                 displayValue = result;
                 calculatingBox.textContent = `${result} ${operator}`;
@@ -188,7 +188,7 @@ operatorBtns.forEach((item) => {
             // if * or / is pressed then evaluate priorityOperator with secondValue and thirdValue and set result to new secondValue, 
             // no state change
                 let calcObject = new MathObject(priorityOperator, secondValue, thirdValue);
-                let firstStepResult = operate(calcObject);
+                let firstStepResult = Number((operate(calcObject)).toFixed.(2));
                 secondValue = firstStepResult;
                 priorityOperator = thirdOperator;
                 calculatingBox.textContent = `${firstValue} ${operator} ${secondValue} ${priorityOperator}`;
@@ -218,3 +218,9 @@ backspaceBTN.addEventListener("mouseup", () => {
 	displayValue = removeNumbersFromArray();
         displayBox.textContent = displayValue;
 });
+
+powerBtn.addEventListener("click", () => {
+	if (state.isWaiting === true) {
+		state.isOn = false;
+		powerBtn.style.backgroundColor = "red";
+	}};
