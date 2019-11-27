@@ -53,7 +53,6 @@ color: rgb(0, 255, 255);
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: orange;
 }
 
 button {
@@ -75,7 +74,6 @@ background-color: rgba(255, 68, 68, 1.0);
 	#calculatingBox {
 		font-size: 20px;
 		height: 32px;
-		background-color: blue;
 	}
 	
 }
@@ -90,7 +88,6 @@ font-size: 65px;
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: green;
 }
 
 }
@@ -105,7 +102,6 @@ font-size: 60px;
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: purple;
 }
 
 }
@@ -113,14 +109,13 @@ font-size: 60px;
 @media all and (min-width: 1280px) {
 
 * {
-font-size: 80px;
+font-size: 75px;
 }
 
 #calculatingBox {
 	font-size: 25px;
 	height: 42px;
 	padding: 10px;
-	background-color: red;
 }
 
 }
