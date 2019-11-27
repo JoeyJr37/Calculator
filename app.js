@@ -207,7 +207,7 @@ clearBtn.addEventListener("click", () => {
     calculatingBox.textContent = "";
     state.isComplexCalculating = false;
 	decimalPressed = false;
-})
+});
 
 const backspaceBTN = document.querySelector("#backspace");
 backspaceBTN.addEventListener("click", () => {
