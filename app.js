@@ -188,7 +188,7 @@ operatorBtns.forEach((item) => {
             // if * or / is pressed then evaluate priorityOperator with secondValue and thirdValue and set result to new secondValue, 
             // no state change
                 let calcObject = new MathObject(priorityOperator, secondValue, thirdValue);
-                let firstStepResult = Number((operate(calcObject)).toFixed.(2));
+                let firstStepResult = Number((operate(calcObject)).toFixed(2));
                 secondValue = firstStepResult;
                 priorityOperator = thirdOperator;
                 calculatingBox.textContent = `${firstValue} ${operator} ${secondValue} ${priorityOperator}`;
