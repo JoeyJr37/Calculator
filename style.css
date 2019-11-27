@@ -46,10 +46,11 @@ color: rgb(0, 255, 255);
 	font-weight: bold;
 	height: 95px;
 	padding: 0px 0px 0px 12px;
+	font-size: 65px;
 }
 
 #calculatingBox {
-	font-size: 15px;
+	font-size: 25px;
 	height: 42px;
 	padding: 10px;
 	background-color: red;
