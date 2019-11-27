@@ -222,5 +222,8 @@ backspaceBTN.addEventListener("mouseup", () => {
 powerBtn.addEventListener("click", () => {
 	if (state.isWaiting === true) {
 		state.isOn = false;
+		state.isWaiting = false
+		state.isCalculating = false;
+		state.isComplexCalculating = false;
 		powerBtn.style.backgroundColor = "red";
 	}});
