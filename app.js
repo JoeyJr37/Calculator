@@ -1,4 +1,4 @@
-"use strict";
+"use  strict";
 const state = {
 	isOn: false, 
 	isWaiting: false, 
@@ -44,6 +44,10 @@ const calculatingBox = document.querySelector("#calculatingBox");
 
 const addNumbersToArray = (number) => {
 	numbersArray.push(number);
+	return numbersArray;};
+
+const removeNumbersFromArray = () => {
+	numbersArray.pop();
 	return numbersArray;};
 
 document.querySelectorAll(".numbers").forEach((item) => {
@@ -114,7 +118,7 @@ operatorBtns.forEach((item) => {
             // if equal is pressed then we evaluate the first two numbers with the operator, 
             if (priorityOperator === "=") {
                     let calcObject = new MathObject(operator, firstValue, secondValue);
-                    let result = (operate(calcObject)).toFixed(2);
+                    let result = Number((operate(calcObject)).toFixed(2));
                 // display the result and then set that number equal to the firstValue and change isCalculating to false
                     displayBox.textContent = result;
                     displayValue = result;
@@ -210,8 +214,7 @@ clearBtn.addEventListener("click", () => {
 });
 
 const backspaceBTN = document.querySelector("#backspace");
-backspaceBTN.addEventListener("click", () => {
-	numbersArray.pop();
-	displayValue = Number(addNumbersToArray(event.target.value).join(""));
-	displayBox.textContent = displayValue;
+backspaceBTN.addEventListener("mouseup", () => {
+	displayValue = removeNumbersFromArray();
+        displayBox.textContent = displayValue;
 });
