@@ -42,12 +42,8 @@ const clearBtn = document.querySelector("#clear");
 const operatorBtns = document.querySelectorAll(".operators");
 const calculatingBox = document.querySelector("#calculatingBox");
 
-
-const arrayBox = document.querySelector("#arrayBox");
-
 const addNumbersToArray = (number) => {
 	numbersArray.push(number);
-	arrayBox.textContent = numbersArray;
 	return numbersArray;};
 
 document.querySelectorAll(".numbers").forEach((item) => {
@@ -211,7 +207,6 @@ clearBtn.addEventListener("click", () => {
     calculatingBox.textContent = "";
     state.isComplexCalculating = false;
 	decimalPressed = false;
-arrayBox.textContent = "";
 })
 
 const backspaceBTN = document.querySelector("#backspace");
